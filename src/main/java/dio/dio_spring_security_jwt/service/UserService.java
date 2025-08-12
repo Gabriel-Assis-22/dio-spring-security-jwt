@@ -15,6 +15,6 @@ public class UserService {
     public void UserService(User user){
         String pass = user.getPassword();
         user.setPassword(encoder.encode(pass));
-        repository.save(user);
+        //repository.save(user);
     }
 }
